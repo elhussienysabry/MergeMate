@@ -1,0 +1,16 @@
+{
+  "files": {
+    "steel_energy_2018_q1.csv": {
+      "Usage kWh": "energy_kwh"
+    },
+    "steel_energy_2018_q2.xlsx": {
+      "Usage_kWh": "energy_kwh"
+    },
+    "steel_energy_2018_q3.csv": {
+      "usage_kwh": "energy_kwh"
+    },
+    "steel_energy_2018_q4.xlsx": {
+      "Usage (kWh)": "energy_kwh"
+    }
+  }
+}

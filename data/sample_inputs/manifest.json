@@ -1,0 +1,75 @@
+{
+  "source_file": "Steel_industry_data.csv",
+  "source_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "source_title": "Steel Industry Energy Consumption",
+  "source_doi": "10.24432/C52G8C",
+  "source_license": "CC BY 4.0",
+  "download_date": "2026-10-28",
+  "generation_note": "Records are split deterministically by 2018 calendar quarter. Header labels are demonstration variations only; values are unchanged. Q4 contains one exact duplicate of its first record and omits the CO2(tCO2) column to exercise missing-column handling.",
+  "total_source_records": 35040,
+  "total_demo_records": 35041,
+  "files": [
+    {
+      "file": "steel_energy_2018_q1.csv",
+      "quarter": "2018 Q1",
+      "date_start": "2018-01-01",
+      "date_end_exclusive": "2018-04-01",
+      "format": "csv",
+      "rows": 8640,
+      "columns": 11,
+      "header_style": "readable spaced headers",
+      "csv_delimiter": "semicolon",
+      "csv_decimal": "comma",
+      "missing_column": [],
+      "documented_duplicate_rows": 0,
+      "sha256": "60f76ed5f4db4b066c228740d53f994f0a7a5fbb3220b0ba7063665c710c7643"
+    },
+    {
+      "file": "steel_energy_2018_q2.xlsx",
+      "quarter": "2018 Q2",
+      "date_start": "2018-04-01",
+      "date_end_exclusive": "2018-07-01",
+      "format": "xlsx",
+      "rows": 8736,
+      "columns": 11,
+      "header_style": "original-style mixed headers",
+      "csv_delimiter": null,
+      "csv_decimal": null,
+      "missing_column": [],
+      "documented_duplicate_rows": 0,
+      "sha256": "3af1e3d544f5eceb65e7c11b133d1e64ecb3a1b2f7b062cbe3f109c6d5aecc84"
+    },
+    {
+      "file": "steel_energy_2018_q3.csv",
+      "quarter": "2018 Q3",
+      "date_start": "2018-07-01",
+      "date_end_exclusive": "2018-10-01",
+      "format": "csv",
+      "rows": 8832,
+      "columns": 11,
+      "header_style": "snake_case headers",
+      "csv_delimiter": "semicolon",
+      "csv_decimal": "comma",
+      "missing_column": [],
+      "documented_duplicate_rows": 0,
+      "sha256": "a408701ce69c3c907a64ad9a2a312302b2e61b4874ffff0ddaf1384c5920c116"
+    },
+    {
+      "file": "steel_energy_2018_q4.xlsx",
+      "quarter": "2018 Q4",
+      "date_start": "2018-10-01",
+      "date_end_exclusive": "2019-01-01",
+      "format": "xlsx",
+      "rows": 8833,
+      "columns": 10,
+      "header_style": "spaced headers with one optional column omitted",
+      "csv_delimiter": null,
+      "csv_decimal": null,
+      "missing_column": [
+        "CO2 (tCO2)"
+      ],
+      "documented_duplicate_rows": 1,
+      "sha256": "056ea3cd87abc5b1523328edb611f3220d70fc9b35626ae6b65922977b27866c"
+    }
+  ]
+}
