@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Local output and temporary uploads
+output/
+mergemate_uploads_*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mergemate"
+version = "1.0.0"
+description = "Consolidate multiple Excel and CSV files into one organized workbook."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "MergeMate"}]
+keywords = ["pandas", "excel", "csv", "streamlit", "spreadsheet", "consolidation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+    "streamlit>=1.40",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+mergemate = "mergemate.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/elhussienysabry/MergeMate"
+Repository = "https://github.com/elhussienysabry/MergeMate"
+Issues = "https://github.com/elhussienysabry/MergeMate/issues"
+
+[tool.setuptools.packages.find]
+include = ["mergemate*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
